@@ -27,6 +27,7 @@ INSERT INTO clientes VALUES ('4546221', 'Johannes', 'Kepler', 3104583224, 'Cl 3 
 INSERT INTO compras VALUES (1, '4546221', TO_TIMESTAMP('10/08/1992 17:30:00','DD/MM/YYYY HH24:MI:SS'), 'E', '', 'P');INSERT INTO compras_productos VALUES (1, 1, 10, 3000, true);INSERT INTO compras_productos VALUES (1, 36, 1, 40000, true);INSERT INTO compras_productos VALUES (1, 27, 1, 9000, true);INSERT INTO compras_productos VALUES (1, 49, 2, 16400, true);INSERT INTO compras_productos VALUES (1, 24, 1, 4000, true);
 /*SE REINICIAN LAS SECUENCIAS SEGÚN LOS DATOS INICIALES*/
 SELECT setval('public.productos_id_producto_seq', 50, true);SELECT setval('public.categorias_id_categoria_seq', 8, true);SELECT setval('public.compras_id_compra_seq', 1, true);
+
 ``` 
 
 # compilar el archivo jar
