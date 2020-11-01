@@ -28,3 +28,15 @@ INSERT INTO compras VALUES (1, '4546221', TO_TIMESTAMP('10/08/1992 17:30:00','DD
 /*SE REINICIAN LAS SECUENCIAS SEGÚN LOS DATOS INICIALES*/
 SELECT setval('public.productos_id_producto_seq', 50, true);SELECT setval('public.categorias_id_categoria_seq', 8, true);SELECT setval('public.compras_id_compra_seq', 1, true);
 ``` 
+
+# compilar el archivo jar
+
+Una vez terminado el proyecto, cambiar la version en el ```build.gradle```, en las pestañas a la derecha, ubicar la pestaña Gradle
+abrir la carpeta Build y dar doble clic en la tarea bootJar.
+
+# Ejecutar el Jar
+
+usar el siguiente comando para ejecutar y activar el entorno de producción
+```
+java -jar -Dspring.profiles.active=prod build/libs/medel-market-1.0.jar
+```
